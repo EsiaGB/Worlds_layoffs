@@ -124,6 +124,8 @@ FROM worlds_layoffs
 GROUP BY industry, country
 ORDER BY max_layoffs DESC;
 ```
+<img width="192" alt="Screenshot 2024-09-16 at 17 11 28" src="https://github.com/user-attachments/assets/b986a455-7eba-408c-8813-79cb216625c5">
+
 
 ### 10 top companies with the highest number of layoffs
 ```sql

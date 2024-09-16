@@ -1,7 +1,8 @@
-## 📚 Worlds Layoffs
-- [Data cleaning/exploring]
-- [Business Task](#business-task)
-- [Insights ](#Insights)
+# 📚 Worlds Layoffs
+
+ 1. [Data cleaning/exploring](#data-cleaning/exploring)
+ 2. [Questions](#questions)
+ 3. [Dashboard](#dashboard)
 
 
 ## Data cleaning/exploring 
@@ -104,7 +105,7 @@ DELETE from worlds_layoffs
 WHERE total_laid_off IS NULL
 AND percentage_laid_off IS NULL;
 ```
-## Business task
+## Questions
 
 ###  The highest number of layoffs by country
 ```sql

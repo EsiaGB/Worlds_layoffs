@@ -112,10 +112,11 @@ AND percentage_laid_off IS NULL;
 SELECT country, SUM(total_laid_off)
 FROM worlds_layoffs
 GROUP BY country
-ORDER BY 2 DESC;
+ORDER BY 2 DESC
+LIMIT 10;
 ```
 
-### The highest number of layoffs by industry
+### Total layoffs by industry 
 ```sql
 SELECT country, industry, SUM(total_laid_off) as max_layoffs
 FROM worlds_layoffs
@@ -136,24 +137,15 @@ LIMIT 10;
 SELECT company, country, total_laid_off
 FROM worlds_layoffs;
 
-### The highest number of layoffs by YEAR
+### The highest number of layoffs by month
 
 ```sql
 SELECT SUM(total_laid_off) as total_laid_off,
-EXTRACT(year from date) as YEAR
+EXTRACT(year from date) as YEAR,
+EXTRACT(MONTH FROM date) as MONTH
 from worlds_layoffs
-GROUP BY 2
+GROUP BY 2, 3
 ORDER BY 1 DESC;
-```
-
-
-### 5 top cities with the highest number of layoffs 
-```sql
-SELECT location, SUM(total_laid_off) as layoffs
-FROM worlds_layoffs
-GROUP BY location
-ORDER BY layoffs DESC
-LIMIT 5;
 ```
 
 ## Dashboard

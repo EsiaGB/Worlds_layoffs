@@ -1,5 +1,4 @@
 ## 📚 Worlds Layoffs
-- [Data cleaning steps](#data-cleaning steps)
 - [Business Task](#business-task)
 - [Insights ](#Insights)
 

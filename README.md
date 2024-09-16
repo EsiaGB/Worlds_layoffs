@@ -5,7 +5,7 @@
  3. [Dashboard](#dashboard)
 
 
-## 1. Data cleaning/exploring 
+## Data cleaning/exploring 
 ### Creating copy of the dataset
 
 ```sql
@@ -105,7 +105,7 @@ DELETE from worlds_layoffs
 WHERE total_laid_off IS NULL
 AND percentage_laid_off IS NULL;
 ```
-## 2.Questions
+## Questions
 
 ###  The highest number of layoffs by country
 ```sql
@@ -148,7 +148,7 @@ GROUP BY 2, 3
 ORDER BY 1 DESC;
 ```
 
-## 3. Dashboard
+## Dashboard
 
 ![Dashboard 1](https://github.com/user-attachments/assets/eba877e1-dfa7-43fc-afb2-d30e6666c706)
 

@@ -115,6 +115,7 @@ GROUP BY country
 ORDER BY 2 DESC
 LIMIT 10;
 ```
+<img width="243" alt="Screenshot 2024-09-16 at 17 00 12" src="https://github.com/user-attachments/assets/9d14caa4-13d8-4a8d-85dd-6451aa1cfef3">
 
 ### Total layoffs by industry 
 ```sql
@@ -124,7 +125,6 @@ GROUP BY industry, country
 ORDER BY max_layoffs DESC;
 ```
 
-
 ### 10 top companies with the highest number of layoffs
 ```sql
 SELECT company, SUM(total_laid_off) as max_layoffs
@@ -133,6 +133,7 @@ GROUP BY company
 ORDER BY 2 DESC
 LIMIT 10;
 ```
+<img width="178" alt="Screenshot 2024-09-16 at 16 57 55" src="https://github.com/user-attachments/assets/8935adf6-8fab-4fa7-a840-841e10bad99a">
 
 SELECT company, country, total_laid_off
 FROM worlds_layoffs;

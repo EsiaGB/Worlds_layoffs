@@ -1,8 +1,7 @@
 # 📚 Worlds Layoffs
 
  1. [Data cleaning/exploring](#data-cleaning/exploring)
- 2. [Questions](#questions)
- 3. [Dashboard](#dashboard)
+ 2. [Dashboard](#dashboard)
 
 
 ## Data cleaning/exploring 

@@ -52,7 +52,7 @@ ROW_NUMBER() OVER(PARTITION BY company, industry,
   FROM world_layoffs) as duplicates
   WHERE number_rows >1;
 ```
-### Checking if duplicates are removed
+### Deleting duplicates
 ```sql
 DELETE FROM worlds_layoffs
 WHERE row_num >1;
